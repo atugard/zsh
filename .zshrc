@@ -54,7 +54,7 @@ export NNN_USE_EDITOR=1
 
 setopt prompt_subst
 . ~/zsh/git-prompt.sh
-PROMPT='%F{red}%n%f|%F{magenta}%m%f %F{blue} $(__git_ps1 "%s") %B%~%b%f %# '
+PROMPT='%F{red}%n%f|%F{magenta}%m%f%F{blue $(__git_ps1 "%s") %# '
 
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
